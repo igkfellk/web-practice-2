@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-inline-end: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Фон страницы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Полная высота окна */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-card {
+    width: 70%;
+    max-width: 500px; /* Максимальная ширина карточки */
+    background: white; /* Цвет фона карточки */
+    border-radius: 15px; /* Скругление углов карточки */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Тень карточки */
+    position: relative; /* Позиционирование для иконки избранного */
+    transition: transform 0.3s; /* Анимация при наведении */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Увеличение на 5% при наведении */
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em; /* Размер иконки избранного */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.product-image {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    border-radius: 10px; /* Скругление углов изображения */
+}
+
+.product-title {
+    color: #2c3e50; /* Цвет заголовка */
+    margin: 10px 0; /* Отступы вокруг заголовка */
+}
+
+.product-description {
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.product-price-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product-price {
+    font-weight: bold; /* Толстый шрифт цены */
+    color: #2c3e50; /* Цвет цены */
+    font-size: 24px; /* Размер шрифта цены */
+}
+
+.product-discount {
+    margin-left: 10px; /* Отступ слева */
+    text-decoration: line-through; /* Перечеркнутая скидка */
+    color: #e74c3c; /* Цвет скидки */
+}
+
+.add-to-cart {
+    background: linear-gradient(90deg, #3498db, #2ecc71); /* Градиент кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Отступы кнопки */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    transition: opacity 0.3s; /* Эффект кнопки */
+}
+
+.add-to-cart:hover {
+    opacity: 0.8; /* Легкое затемнение при наведении */
+}
